@@ -1,0 +1,348 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+/* Main */
+
+.main {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgb(27, 0, 0);
+}
+
+.main button {
+    padding: 10px 12px;
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+.main #logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.863);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.main #logo img {
+    margin-right: 15px;
+}
+
+/* Left & Right */
+
+.right, .left {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Song IMG */
+
+.left .img-song {
+    height: 300px;
+    width: 80%;
+    background-color: rgb(255, 55, 55);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px 12px rgba(129, 0, 0, 0.459);
+}
+
+/* Both ranhe slider */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+    background-color: rgba(129, 0, 0, 0.459);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right input[type="range"] {
+    width: 40%;
+}
+
+/* Volume part */
+
+.left .volume {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.left .volume p {
+    font-size: 15px;
+}
+
+.left .volume img {
+    cursor: pointer;
+    padding: 8px 8px;
+}
+
+.left #volume_show {
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+    background-color: rgba(129, 0, 0, 0.459);
+    border-radius: 35px;
+}
+
+/* Right part */
+
+.right .middle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .middle button {
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background-color: rgba(129, 0, 0, 0.459);
+}
+
+.right .middle button:hover {
+    background-color: rgb(182, 0, 0);
+}
+
+.right #title {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: red;
+    font-size: 35px;
+}
+
+.right #artist {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: rgba(129, 0, 0, 0.925);
+    font-size: 18px;
+}
+
+.right .duration {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 40px;
+}
+
+.right .duration p {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.right #auto {
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 45px;
+    border: none;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: rgba(129, 0, 0, 0.459);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right #auto:hover {
+    background-color: rgb(143, 0, 0);
+}
+
+.right #auto img {
+    margin-left: 8px;
+}
+
+#play {
+    background-color: rgb(129, 0, 0);
+}
+
+#play:hover {
+    background-color: rgb(182, 0, 0);
+}
+
+.right button:hover {
+    background-color: rgba(129, 0, 0, 0.459);
+}
+
+.right img:before {
+    color: #fff;
+    font-size: 20px;
+}
+
+.right .show-song-no {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: red;
+    border-radius: 5px;
+    background-color: rgba(129, 0, 0, 0.459);
+}
+
+.right .show-song-no p:nth-child(2) {
+    margin: 0 5px;
+}
+
+#time {
+    color: red;
+    position: absolute;
+    top: 70%;
+    left: 73%;
+}
+
+#auto.active {
+    background-color: rgb(219, 0, 0);
+    color: white;
+  }
+
+@media screen and (min-width: 51px) and (max-width: 720px) {
+    .main {
+        flex-direction: column;
+        width: 100%;
+        height: 95%;
+    }
+
+    body {
+        min-height: 100%;
+        flex-direction: column;
+        padding: 4px;
+        background-color: rgb(27, 0, 0);
+    }
+
+    .left .img-song {
+        height: 300px;
+        width: 80%;
+        background-color: rgb(255, 55, 55);
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        box-shadow: 1px 0px 20px 12px rgba(129, 0, 0, 0.459);
+    }
+    
+    .left {
+        top: 5px;
+        width: 100%;
+    }
+
+    .left .img-song {
+        height: 150px;
+        width: 80%;
+        background-color: rgb(255, 55, 55);
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        box-shadow: 1px 0px 20px 12px rgba(129, 0, 0, 0.459);
+    }
+
+    .right {
+        top: 10px;
+        width: 100%;
+    }
+
+    .right .show-song-no {
+        position: absolute;
+        top: -290px;
+    }
+
+    .right #title {
+        top: -20px;
+        font-size: 25px;
+    }
+
+    .right #artist {
+        top: 9px;
+        font-size: 15px;
+    }
+
+    .right #auto {
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+    }
+
+    #time {
+        font-size: 15px;
+        top: 520px;
+        left: 150px;
+    }
+
+    .right #duration {
+        position: relative;
+        top: 25px;
+        width: 100%;
+    }
+}
